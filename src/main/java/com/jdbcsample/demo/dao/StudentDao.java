@@ -31,7 +31,7 @@ public class StudentDao {
 		
 	}
 	
-	/*this is using customer rowmapper */
+	/*this is using custom rowmapper */
 	public List<Student> findAll() {
 		return jdbcTemplate.query("select * from student", new StudentRowMapper());
 	}
